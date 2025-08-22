@@ -163,12 +163,18 @@ This codebase has been developed with python version 3.7, PyTorch 1.7+ and torch
 
 ```
 conda install pytorch==1.7.0 torchvision==0.8.0 cudatoolkit=10.2 -c pytorch
+或
+uv pip install --index-strategy unsafe-best-match \
+  --extra-index-url https://download.pytorch.org/whl/cu110 \
+  torch==1.7.1+cu110 torchvision==0.8.2+cu110
 ```
 
 See `requirements.txt` for additional dependencies and version requirements.
 
 ```setup
 pip install -r requirements.txt
+或
+uv pip install -r requirements.txt 
 ```
 
 ### Data preparation
